@@ -141,10 +141,10 @@ public class VocabularyControllerServlet extends HttpServlet {
         int status = Integer.parseInt(request.getParameter("status"));
 
         // create a new student object
-        Vocabulary theStudent = new Vocabulary(words, pronunciation, meaning, status);
+        Vocabulary theVocabulary = new Vocabulary(words, pronunciation, meaning, status);
 
         // add the student to the database
-        vocabularyDbUtil.addVocabulary(theStudent);
+        vocabularyDbUtil.addVocabulary(theVocabulary);
 
         // send back to main page (the student list)
         listVocabulary(request, response);

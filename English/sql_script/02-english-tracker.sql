@@ -24,7 +24,7 @@ USE `web_student_tracker`;
 DROP TABLE IF EXISTS `english`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `student` (
+CREATE TABLE `english` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `words` varchar(50) DEFAULT NULL,
   `pronunciation` varchar(50) DEFAULT NULL,
